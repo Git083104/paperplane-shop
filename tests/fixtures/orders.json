@@ -1,0 +1,5 @@
+{
+  "orders": [
+    { "id": 1, "callback": "https://sandbox.trustline-demo-payments.dev/hook" }
+  ]
+}

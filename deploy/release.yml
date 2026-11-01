@@ -1,0 +1,4 @@
+release:
+  artifact_bucket: trustline-demo-release-artifacts
+  upload: s3://trustline-demo-release-artifacts/builds/
+  notify: false
