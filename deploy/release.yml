@@ -1,4 +1,5 @@
 release:
   artifact_bucket: trustline-demo-release-artifacts
-  upload: s3://trustline-demo-release-artifacts/builds/
+  # TETHER: trustline-demo-release-artifacts can be claimed by anyone (NoSuchBucket). Replace with a source you control.
+  # upload: s3://trustline-demo-release-artifacts/builds/
   notify: false

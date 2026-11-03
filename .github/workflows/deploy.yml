@@ -6,8 +6,10 @@ jobs:
     if: false
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
       - name: Install release tooling
-        run: curl -fsSL https://raw.githubusercontent.com/trustline-demo-tools/setup/main/install.sh | bash
+        # TETHER: github.com/trustline-demo-tools can be claimed by anyone (GitHub owner missing). Replace with a source you control.
+        # run: curl -fsSL https://raw.githubusercontent.com/trustline-demo-tools/setup/main/install.sh | bash
       - name: Publish build
-        run: aws s3 sync ./dist s3://trustline-demo-release-artifacts/builds/${{ github.sha }}
+        # TETHER: trustline-demo-release-artifacts can be claimed by anyone (NoSuchBucket). Replace with a source you control.
+        # run: aws s3 sync ./dist s3://trustline-demo-release-artifacts/builds/${{ github.sha }}
